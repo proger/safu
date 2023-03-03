@@ -1,0 +1,116 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 40%;
+    /* IE10 */
+    flex: 40%;
+    max-width: 40%;
+    padding: 1%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+}
+
+.gallery__img {
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    vertical-align: baseline;
+    line-height: 1.5 !important;
+    text-align: center;
+    font: normal normal normal 40px/1.35em worksans-extralight, "work sans", sans-serif;
+    padding: calc(72px - 0.3em) 30px calc((72px - 0.3em) - 20px);
+    letter-spacing: normal;
+    color: #6c757d;
+    font-weight: 300;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font: normal normal normal 20px/1.67em worksans-extralight, 'work sans', sans-serif;
+    pointer-events: auto;
+    letter-spacing: normal;
+    text-align: center;
+    line-height: 1.67em;
+    color: #6c757d;
+    vertical-align: baseline;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1%;
+
+}
+
+li {
+    font: normal normal normal 15px/1.875em proxima-n-w01-reg, proxima-n-w05-reg, sans-serif;
+    color: #6c757d;
+    letter-spacing: normal;
+    text-align: start;
+    line-height: 1.875em;
+}
+
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column img {
+    width: 100%;
+    box-shadow: 5px 5px 10px 0 #444;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+p{
+
+    vertical-align: baseline;
+    background: transparent;
+    font: normal normal normal 19px/1.875em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
+    color: #6c757d;
+    letter-spacing: normal;
+    text-align: center;
+    line-height: 1.875em;
+}
+
+
+img{
+    width:20%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
